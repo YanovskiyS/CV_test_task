@@ -12,22 +12,29 @@ from src.utils.db_manager import DBManager
 
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/auth/login")
 
+
 async def get_current_user(
     token: str = Depends(oauth2_scheme),
-
 ) -> UsersOrm:
     try:
         user_id, _ = AuthService().decode_token(token, expected_type="access")
     except TokenError:
-        raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Invalid or expired access token")
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail="Invalid or expired access token",
+        )
     async with async_session_maker() as conn:
-        user= await UsersRepository(conn).get_one(id=user_id)
+        user = await UsersRepository(conn).get_one(id=user_id)
 
         if not user:
-            raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="User not found")
+            raise HTTPException(
+                status_code=status.HTTP_401_UNAUTHORIZED, detail="User not found"
+            )
         return user
 
-UserIdDep = Annotated[UsersOrm, Depends(get_current_user)]
+
+UserDep = Annotated[UsersOrm, Depends(get_current_user)]
+
 
 def get_db_manager():
     return DBManager(session_factory=async_session_maker)

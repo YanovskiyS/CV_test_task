@@ -1,10 +1,11 @@
 from fastapi import HTTPException
 from pydantic import BaseModel
 from sqlalchemy import insert, select, update, delete
+from sqlalchemy.exc import NoResultFound
 
 
 class BaseRepository:
-    model =None
+    model = None
     schema = None
 
     def __init__(self, session):
@@ -14,11 +15,14 @@ class BaseRepository:
         query = select(self.model).filter(*filter).filter_by(**filtered_by)
         result = await self.session.execute(query)
         return [
-            self.schema.model_validate(model, from_attributes=True) for model in result.scalars().all()
+            self.schema.model_validate(model, from_attributes=True)
+            for model in result.scalars().all()
         ]
 
     async def add(self, data: BaseModel):
-        add_data_stmt = insert(self.model).values(**data.model_dump()).returning(self.model)
+        add_data_stmt = (
+            insert(self.model).values(**data.model_dump()).returning(self.model)
+        )
         result = await self.session.execute(add_data_stmt)
         model = result.scalars().one()
         return self.schema.model_validate(model, from_attributes=True)
@@ -36,19 +40,22 @@ class BaseRepository:
         result = await self.session.execute(query)
         try:
             model = result.scalar_one()
-        except:
+        except NoResultFound:
             raise HTTPException(status_code=402, detail="Not found")
         return model
 
     async def edit(
-            self, data: BaseModel, exclude_unset: bool = False, **filter_by
+        self, data: BaseModel, exclude_unset: bool = False, **filter_by
     ) -> None:
         product_update = (
             update(self.model)
             .filter_by(**filter_by)
             .values(data.model_dump(exclude_unset=exclude_unset))
+            .returning(self.model)
         )
-        await self.session.execute(product_update)
+        result = await self.session.execute(product_update)
+        model = result.scalars().one()
+        return self.schema.model_validate(model, from_attributes=True)
 
     async def delete(self, **filter_by):
         delete_stmt = delete(self.model).filter_by(**filter_by)

@@ -7,8 +7,10 @@ class ReqAddResume(BaseModel):
     title: str = Field(...)
     content: Optional[str] = None
 
+
 class Resume(ReqAddResume):
     id: int
+
 
 class AddResume(ReqAddResume):
     user_id: int

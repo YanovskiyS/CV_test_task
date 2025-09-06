@@ -33,10 +33,10 @@ async def setup_database():
         await conn.run_sync(Base.metadata.create_all)
 
 
-
 @pytest.fixture(scope="session")
 async def ac() -> AsyncGenerator[AsyncClient, None]:
-    async with AsyncClient(transport=ASGITransport(app=app), base_url="http://test"
+    async with AsyncClient(
+        transport=ASGITransport(app=app), base_url="http://test"
     ) as ac:
         yield ac
 
@@ -44,8 +44,7 @@ async def ac() -> AsyncGenerator[AsyncClient, None]:
 async def register_and_login(ac):
     # 1. Регистрация
     await ac.post(
-        "/auth/register",
-        json={"email": "test@example.com", "password": "password123"}
+        "/auth/register", json={"email": "test@example.com", "password": "password123"}
     )
 
     # 2. Логин
@@ -56,5 +55,3 @@ async def register_and_login(ac):
     )
     token = login_res.json()["access_token"]
     return {"Authorization": f"Bearer {token}"}
-
-

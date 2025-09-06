@@ -1,11 +1,12 @@
-from __future__ import annotations
-from typing import List
+import typing
 
 from sqlalchemy import String
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
 from src.database import Base
 
+if typing.TYPE_CHECKING:
+    from src.models.jwt import RefreshTokensOrm
 
 
 class UsersOrm(Base):
@@ -15,6 +16,6 @@ class UsersOrm(Base):
     email: Mapped[str] = mapped_column(String(100), unique=True)
     hashed_password: Mapped[str] = mapped_column(String(100))
 
-    refresh_tokens: Mapped[List["RefreshTokensOrm"]] = relationship(
+    refresh_tokens: Mapped[["RefreshTokensOrm"]] = relationship(
         "RefreshTokensOrm", back_populates="user", cascade="all, delete-orphan"
     )

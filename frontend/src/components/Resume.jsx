@@ -14,7 +14,7 @@ export default function Resumes({ user }) {
     setLoading(true);
     setError("");
     try {
-      const res = await axios.get("http://127.0.0.1:8000/resumes/me", {
+      const res = await axios.get("http://127.0.0.1:7777/resumes/me", {
         headers: { Authorization: `Bearer ${user.accessToken}` },
         withCredentials: true,
       });
@@ -31,7 +31,7 @@ export default function Resumes({ user }) {
     setError("");
     try {
       const res = await axios.post(
-        "http://127.0.0.1:8000/resumes/",
+        "http://127.0.0.1:7777/resumes/",
         { title, content },
         {
           headers: { Authorization: `Bearer ${user.accessToken}` },

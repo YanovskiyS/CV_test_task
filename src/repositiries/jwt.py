@@ -1,16 +1,17 @@
-from sqlalchemy import insert, select, update
+from sqlalchemy import select, update
 
 from src.models.jwt import RefreshTokensOrm
 from src.repositiries.base import BaseRepository
 from src.schemas.jwt import TokenPair
 
 
-
 class JwtRepository(BaseRepository):
     model = RefreshTokensOrm
     schema = TokenPair
 
-    async def add_refresh_token(self, id: str, user_id: int, expires_at, revoked: bool = False):
+    async def add_refresh_token(
+        self, id: str, user_id: int, expires_at, revoked: bool = False
+    ):
         token = RefreshTokensOrm(
             id=id,
             user_id=user_id,

@@ -84,3 +84,802 @@
 2025-09-04 23:36:22.923 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/resumes
 2025-09-04 23:36:22.925 | INFO     | src.api.resume:add_resume:16 - add_resume endpoint called
 2025-09-04 23:36:22.928 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/resumes
+2025-09-05 21:37:48.011 | INFO     | main:log_requests:32 - Incoming request: GET http://0.0.0.0:8000/
+2025-09-05 21:37:48.021 | INFO     | main:log_requests:34 - Response status: 404 for GET http://0.0.0.0:8000/
+2025-09-05 21:37:52.184 | INFO     | main:log_requests:32 - Incoming request: GET http://0.0.0.0:8000/docs
+2025-09-05 21:37:52.185 | INFO     | main:log_requests:34 - Response status: 200 for GET http://0.0.0.0:8000/docs
+2025-09-05 21:37:52.261 | INFO     | main:log_requests:32 - Incoming request: GET http://0.0.0.0:8000/openapi.json
+2025-09-05 21:37:52.272 | INFO     | main:log_requests:34 - Response status: 200 for GET http://0.0.0.0:8000/openapi.json
+2025-09-05 21:38:10.539 | INFO     | main:log_requests:32 - Incoming request: POST http://0.0.0.0:8000/auth/login
+2025-09-05 21:38:10.548 | INFO     | src.api.auth:login:58 - Login endpoint called
+2025-09-05 21:38:10.939 | INFO     | main:log_requests:34 - Response status: 200 for POST http://0.0.0.0:8000/auth/login
+2025-09-05 21:39:13.276 | INFO     | main:log_requests:32 - Incoming request: POST http://0.0.0.0:8000/resumes
+2025-09-05 21:39:13.299 | INFO     | src.api.resume:add_resume:16 - add_resume endpoint called
+2025-09-05 21:39:13.313 | INFO     | main:log_requests:34 - Response status: 200 for POST http://0.0.0.0:8000/resumes
+2025-09-05 22:16:58.640 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/register
+2025-09-05 22:16:58.646 | INFO     | src.api.auth:register_user:43 - register endpoint called
+2025-09-05 22:16:58.952 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/register
+2025-09-05 22:16:58.953 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/login
+2025-09-05 22:16:58.955 | INFO     | src.api.auth:login:57 - Login endpoint called
+2025-09-05 22:16:59.242 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/login
+2025-09-05 22:16:59.243 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/resumes
+2025-09-05 22:16:59.273 | INFO     | src.api.resume:add_resume:15 - add_resume endpoint called
+2025-09-05 22:16:59.293 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/resumes
+2025-09-05 22:16:59.295 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/register
+2025-09-05 22:16:59.296 | INFO     | src.api.auth:register_user:43 - register endpoint called
+2025-09-05 22:16:59.316 | INFO     | src.main:log_requests:34 - Response status: 400 for POST http://test/auth/register
+2025-09-05 22:16:59.317 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/login
+2025-09-05 22:16:59.319 | INFO     | src.api.auth:login:57 - Login endpoint called
+2025-09-05 22:16:59.579 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/login
+2025-09-05 22:16:59.580 | INFO     | src.main:log_requests:32 - Incoming request: GET http://test/resumes/me
+2025-09-05 22:27:34.384 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/register
+2025-09-05 22:27:34.390 | INFO     | src.api.auth:register_user:43 - register endpoint called
+2025-09-05 22:27:34.692 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/register
+2025-09-05 22:27:34.693 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/login
+2025-09-05 22:27:34.695 | INFO     | src.api.auth:login:57 - Login endpoint called
+2025-09-05 22:27:34.984 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/login
+2025-09-05 22:27:34.985 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/resumes
+2025-09-05 22:27:35.021 | INFO     | src.api.resume:add_resume:15 - add_resume endpoint called
+2025-09-05 22:27:35.045 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/resumes
+2025-09-05 22:27:35.048 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/register
+2025-09-05 22:27:35.049 | INFO     | src.api.auth:register_user:43 - register endpoint called
+2025-09-05 22:27:35.071 | INFO     | src.main:log_requests:34 - Response status: 400 for POST http://test/auth/register
+2025-09-05 22:27:35.071 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/login
+2025-09-05 22:27:35.074 | INFO     | src.api.auth:login:57 - Login endpoint called
+2025-09-05 22:27:35.345 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/login
+2025-09-05 22:27:35.346 | INFO     | src.main:log_requests:32 - Incoming request: GET http://test/resumes/me
+2025-09-05 22:27:35.379 | INFO     | src.api.resume:get_user_resumes:22 - get_user_resumes endpoint called
+2025-09-05 22:27:35.400 | INFO     | src.main:log_requests:34 - Response status: 200 for GET http://test/resumes/me
+2025-09-05 22:31:21.751 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/register
+2025-09-05 22:31:21.757 | INFO     | src.api.auth:register_user:43 - register endpoint called
+2025-09-05 22:31:22.053 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/register
+2025-09-05 22:31:22.054 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/login
+2025-09-05 22:31:22.055 | INFO     | src.api.auth:login:57 - Login endpoint called
+2025-09-05 22:31:22.343 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/login
+2025-09-05 22:31:22.344 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/resumes
+2025-09-05 22:31:22.383 | INFO     | src.api.resume:add_resume:15 - add_resume endpoint called
+2025-09-05 22:31:22.405 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/resumes
+2025-09-05 22:31:22.408 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/register
+2025-09-05 22:31:22.409 | INFO     | src.api.auth:register_user:43 - register endpoint called
+2025-09-05 22:31:22.431 | INFO     | src.main:log_requests:34 - Response status: 400 for POST http://test/auth/register
+2025-09-05 22:31:22.432 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/login
+2025-09-05 22:31:22.434 | INFO     | src.api.auth:login:57 - Login endpoint called
+2025-09-05 22:31:22.703 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/login
+2025-09-05 22:31:22.703 | INFO     | src.main:log_requests:32 - Incoming request: GET http://test/resumes/me
+2025-09-05 22:31:22.740 | INFO     | src.api.resume:get_user_resumes:22 - get_user_resumes endpoint called
+2025-09-05 22:31:22.765 | INFO     | src.main:log_requests:34 - Response status: 200 for GET http://test/resumes/me
+2025-09-05 22:31:22.767 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/register
+2025-09-05 22:31:22.768 | INFO     | src.api.auth:register_user:43 - register endpoint called
+2025-09-05 22:31:22.787 | INFO     | src.main:log_requests:34 - Response status: 400 for POST http://test/auth/register
+2025-09-05 22:31:22.788 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/login
+2025-09-05 22:31:22.790 | INFO     | src.api.auth:login:57 - Login endpoint called
+2025-09-05 22:31:23.052 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/login
+2025-09-05 22:31:23.053 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/resumes/
+2025-09-05 22:31:23.053 | INFO     | src.main:log_requests:34 - Response status: 307 for POST http://test/resumes/
+2025-09-05 22:35:11.238 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/register
+2025-09-05 22:35:11.245 | INFO     | src.api.auth:register_user:43 - register endpoint called
+2025-09-05 22:35:11.541 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/register
+2025-09-05 22:35:11.541 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/login
+2025-09-05 22:35:11.543 | INFO     | src.api.auth:login:57 - Login endpoint called
+2025-09-05 22:35:11.828 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/login
+2025-09-05 22:35:11.829 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/resumes
+2025-09-05 22:35:11.863 | INFO     | src.api.resume:add_resume:15 - add_resume endpoint called
+2025-09-05 22:35:11.884 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/resumes
+2025-09-05 22:35:11.887 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/register
+2025-09-05 22:35:11.888 | INFO     | src.api.auth:register_user:43 - register endpoint called
+2025-09-05 22:35:11.907 | INFO     | src.main:log_requests:34 - Response status: 400 for POST http://test/auth/register
+2025-09-05 22:35:11.908 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/login
+2025-09-05 22:35:11.909 | INFO     | src.api.auth:login:57 - Login endpoint called
+2025-09-05 22:35:12.174 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/login
+2025-09-05 22:35:12.175 | INFO     | src.main:log_requests:32 - Incoming request: GET http://test/resumes/me
+2025-09-05 22:35:12.212 | INFO     | src.api.resume:get_user_resumes:22 - get_user_resumes endpoint called
+2025-09-05 22:35:12.234 | INFO     | src.main:log_requests:34 - Response status: 200 for GET http://test/resumes/me
+2025-09-05 22:35:12.237 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/register
+2025-09-05 22:35:12.237 | INFO     | src.api.auth:register_user:43 - register endpoint called
+2025-09-05 22:35:12.261 | INFO     | src.main:log_requests:34 - Response status: 400 for POST http://test/auth/register
+2025-09-05 22:35:12.262 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/login
+2025-09-05 22:35:12.265 | INFO     | src.api.auth:login:57 - Login endpoint called
+2025-09-05 22:35:12.535 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/login
+2025-09-05 22:35:12.536 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/resumes/
+2025-09-05 22:35:12.536 | INFO     | src.main:log_requests:34 - Response status: 307 for POST http://test/resumes/
+2025-09-05 22:37:02.668 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/register
+2025-09-05 22:37:02.674 | INFO     | src.api.auth:register_user:43 - register endpoint called
+2025-09-05 22:37:02.980 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/register
+2025-09-05 22:37:02.981 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/login
+2025-09-05 22:37:02.983 | INFO     | src.api.auth:login:57 - Login endpoint called
+2025-09-05 22:37:03.269 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/login
+2025-09-05 22:37:03.270 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/resumes
+2025-09-05 22:37:03.310 | INFO     | src.api.resume:add_resume:15 - add_resume endpoint called
+2025-09-05 22:37:03.331 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/resumes
+2025-09-05 22:37:03.333 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/register
+2025-09-05 22:37:03.334 | INFO     | src.api.auth:register_user:43 - register endpoint called
+2025-09-05 22:37:03.352 | INFO     | src.main:log_requests:34 - Response status: 400 for POST http://test/auth/register
+2025-09-05 22:37:03.353 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/login
+2025-09-05 22:37:03.355 | INFO     | src.api.auth:login:57 - Login endpoint called
+2025-09-05 22:37:03.627 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/login
+2025-09-05 22:37:03.628 | INFO     | src.main:log_requests:32 - Incoming request: GET http://test/resumes/me
+2025-09-05 22:37:03.663 | INFO     | src.api.resume:get_user_resumes:22 - get_user_resumes endpoint called
+2025-09-05 22:37:03.686 | INFO     | src.main:log_requests:34 - Response status: 200 for GET http://test/resumes/me
+2025-09-05 22:37:03.688 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/register
+2025-09-05 22:37:03.689 | INFO     | src.api.auth:register_user:43 - register endpoint called
+2025-09-05 22:37:03.712 | INFO     | src.main:log_requests:34 - Response status: 400 for POST http://test/auth/register
+2025-09-05 22:37:03.713 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/login
+2025-09-05 22:37:03.714 | INFO     | src.api.auth:login:57 - Login endpoint called
+2025-09-05 22:37:03.973 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/login
+2025-09-05 22:37:03.974 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/resumes/
+2025-09-05 22:37:03.974 | INFO     | src.main:log_requests:34 - Response status: 307 for POST http://test/resumes/
+2025-09-05 22:37:03.975 | INFO     | src.main:log_requests:32 - Incoming request: GET http://test/resumes/<Response [307 Temporary Redirect]>
+2025-09-05 22:37:04.010 | INFO     | src.main:log_requests:34 - Response status: 422 for GET http://test/resumes/<Response [307 Temporary Redirect]>
+2025-09-05 22:38:13.026 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/register
+2025-09-05 22:38:13.032 | INFO     | src.api.auth:register_user:43 - register endpoint called
+2025-09-05 22:38:13.331 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/register
+2025-09-05 22:38:13.332 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/login
+2025-09-05 22:38:13.334 | INFO     | src.api.auth:login:57 - Login endpoint called
+2025-09-05 22:38:13.614 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/login
+2025-09-05 22:38:13.614 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/resumes
+2025-09-05 22:38:13.658 | INFO     | src.api.resume:add_resume:15 - add_resume endpoint called
+2025-09-05 22:38:13.681 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/resumes
+2025-09-05 22:38:13.684 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/register
+2025-09-05 22:38:13.684 | INFO     | src.api.auth:register_user:43 - register endpoint called
+2025-09-05 22:38:13.707 | INFO     | src.main:log_requests:34 - Response status: 400 for POST http://test/auth/register
+2025-09-05 22:38:13.708 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/login
+2025-09-05 22:38:13.710 | INFO     | src.api.auth:login:57 - Login endpoint called
+2025-09-05 22:38:13.980 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/login
+2025-09-05 22:38:13.980 | INFO     | src.main:log_requests:32 - Incoming request: GET http://test/resumes/me
+2025-09-05 22:38:14.013 | INFO     | src.api.resume:get_user_resumes:22 - get_user_resumes endpoint called
+2025-09-05 22:38:14.033 | INFO     | src.main:log_requests:34 - Response status: 200 for GET http://test/resumes/me
+2025-09-05 22:38:14.035 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/register
+2025-09-05 22:38:14.036 | INFO     | src.api.auth:register_user:43 - register endpoint called
+2025-09-05 22:38:14.055 | INFO     | src.main:log_requests:34 - Response status: 400 for POST http://test/auth/register
+2025-09-05 22:38:14.056 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/login
+2025-09-05 22:38:14.058 | INFO     | src.api.auth:login:57 - Login endpoint called
+2025-09-05 22:38:14.324 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/login
+2025-09-05 22:38:14.325 | INFO     | src.main:log_requests:32 - Incoming request: GET http://test/resumes/1
+2025-09-05 22:38:14.359 | INFO     | src.api.resume:get_resume_by_id:28 - get_resume_by_id endpoint called
+2025-09-05 22:38:14.386 | INFO     | src.main:log_requests:34 - Response status: 200 for GET http://test/resumes/1
+2025-09-05 22:40:46.398 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/register
+2025-09-05 22:40:46.404 | INFO     | src.api.auth:register_user:43 - register endpoint called
+2025-09-05 22:40:46.709 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/register
+2025-09-05 22:40:46.710 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/login
+2025-09-05 22:40:46.712 | INFO     | src.api.auth:login:57 - Login endpoint called
+2025-09-05 22:40:46.993 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/login
+2025-09-05 22:40:46.993 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/resumes
+2025-09-05 22:40:47.028 | INFO     | src.api.resume:add_resume:15 - add_resume endpoint called
+2025-09-05 22:40:47.053 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/resumes
+2025-09-05 22:40:47.055 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/register
+2025-09-05 22:40:47.056 | INFO     | src.api.auth:register_user:43 - register endpoint called
+2025-09-05 22:40:47.076 | INFO     | src.main:log_requests:34 - Response status: 400 for POST http://test/auth/register
+2025-09-05 22:40:47.076 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/login
+2025-09-05 22:40:47.079 | INFO     | src.api.auth:login:57 - Login endpoint called
+2025-09-05 22:40:47.347 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/login
+2025-09-05 22:40:47.348 | INFO     | src.main:log_requests:32 - Incoming request: GET http://test/resumes/me
+2025-09-05 22:40:47.385 | INFO     | src.api.resume:get_user_resumes:22 - get_user_resumes endpoint called
+2025-09-05 22:40:47.405 | INFO     | src.main:log_requests:34 - Response status: 200 for GET http://test/resumes/me
+2025-09-05 22:40:47.408 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/register
+2025-09-05 22:40:47.408 | INFO     | src.api.auth:register_user:43 - register endpoint called
+2025-09-05 22:40:47.430 | INFO     | src.main:log_requests:34 - Response status: 400 for POST http://test/auth/register
+2025-09-05 22:40:47.431 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/login
+2025-09-05 22:40:47.433 | INFO     | src.api.auth:login:57 - Login endpoint called
+2025-09-05 22:40:47.704 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/login
+2025-09-05 22:40:47.704 | INFO     | src.main:log_requests:32 - Incoming request: GET http://test/resumes/1
+2025-09-05 22:40:47.744 | INFO     | src.api.resume:get_resume_by_id:28 - get_resume_by_id endpoint called
+2025-09-05 22:40:47.764 | INFO     | src.main:log_requests:34 - Response status: 200 for GET http://test/resumes/1
+2025-09-05 22:40:47.766 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/register
+2025-09-05 22:40:47.767 | INFO     | src.api.auth:register_user:43 - register endpoint called
+2025-09-05 22:40:47.788 | INFO     | src.main:log_requests:34 - Response status: 400 for POST http://test/auth/register
+2025-09-05 22:40:47.789 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/login
+2025-09-05 22:40:47.791 | INFO     | src.api.auth:login:57 - Login endpoint called
+2025-09-05 22:40:48.061 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/login
+2025-09-05 22:40:48.062 | INFO     | src.main:log_requests:32 - Incoming request: PATCH http://test/resumes/1
+2025-09-05 22:40:48.097 | INFO     | src.api.resume:update_resume:40 - update_resume endpoint called
+2025-09-05 22:40:48.119 | INFO     | src.main:log_requests:34 - Response status: 200 for PATCH http://test/resumes/1
+2025-09-05 22:41:14.414 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/register
+2025-09-05 22:41:14.420 | INFO     | src.api.auth:register_user:43 - register endpoint called
+2025-09-05 22:41:14.715 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/register
+2025-09-05 22:41:14.724 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/login
+2025-09-05 22:41:14.741 | INFO     | src.api.auth:login:57 - Login endpoint called
+2025-09-05 22:41:15.046 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/login
+2025-09-05 22:41:15.047 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/resumes
+2025-09-05 22:41:15.081 | INFO     | src.api.resume:add_resume:15 - add_resume endpoint called
+2025-09-05 22:41:15.102 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/resumes
+2025-09-05 22:41:15.104 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/register
+2025-09-05 22:41:15.105 | INFO     | src.api.auth:register_user:43 - register endpoint called
+2025-09-05 22:41:15.126 | INFO     | src.main:log_requests:34 - Response status: 400 for POST http://test/auth/register
+2025-09-05 22:41:15.127 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/login
+2025-09-05 22:41:15.129 | INFO     | src.api.auth:login:57 - Login endpoint called
+2025-09-05 22:41:15.396 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/login
+2025-09-05 22:41:15.397 | INFO     | src.main:log_requests:32 - Incoming request: GET http://test/resumes/me
+2025-09-05 22:41:15.431 | INFO     | src.api.resume:get_user_resumes:22 - get_user_resumes endpoint called
+2025-09-05 22:41:15.452 | INFO     | src.main:log_requests:34 - Response status: 200 for GET http://test/resumes/me
+2025-09-05 22:41:15.454 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/register
+2025-09-05 22:41:15.455 | INFO     | src.api.auth:register_user:43 - register endpoint called
+2025-09-05 22:41:15.475 | INFO     | src.main:log_requests:34 - Response status: 400 for POST http://test/auth/register
+2025-09-05 22:41:15.476 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/login
+2025-09-05 22:41:15.478 | INFO     | src.api.auth:login:57 - Login endpoint called
+2025-09-05 22:41:15.745 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/login
+2025-09-05 22:41:15.745 | INFO     | src.main:log_requests:32 - Incoming request: GET http://test/resumes/1
+2025-09-05 22:41:15.781 | INFO     | src.api.resume:get_resume_by_id:28 - get_resume_by_id endpoint called
+2025-09-05 22:41:15.802 | INFO     | src.main:log_requests:34 - Response status: 200 for GET http://test/resumes/1
+2025-09-05 22:41:15.804 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/register
+2025-09-05 22:41:15.805 | INFO     | src.api.auth:register_user:43 - register endpoint called
+2025-09-05 22:41:15.825 | INFO     | src.main:log_requests:34 - Response status: 400 for POST http://test/auth/register
+2025-09-05 22:41:15.826 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/login
+2025-09-05 22:41:15.828 | INFO     | src.api.auth:login:57 - Login endpoint called
+2025-09-05 22:41:16.102 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/login
+2025-09-05 22:41:16.103 | INFO     | src.main:log_requests:32 - Incoming request: PATCH http://test/resumes/1
+2025-09-05 22:41:16.140 | INFO     | src.api.resume:update_resume:40 - update_resume endpoint called
+2025-09-05 22:41:16.166 | INFO     | src.main:log_requests:34 - Response status: 200 for PATCH http://test/resumes/1
+2025-09-05 22:42:04.049 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/register
+2025-09-05 22:42:04.057 | INFO     | src.api.auth:register_user:43 - register endpoint called
+2025-09-05 22:42:04.351 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/register
+2025-09-05 22:42:04.352 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/login
+2025-09-05 22:42:04.353 | INFO     | src.api.auth:login:57 - Login endpoint called
+2025-09-05 22:42:04.635 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/login
+2025-09-05 22:42:04.636 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/resumes
+2025-09-05 22:42:04.676 | INFO     | src.api.resume:add_resume:15 - add_resume endpoint called
+2025-09-05 22:42:04.700 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/resumes
+2025-09-05 22:42:04.702 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/register
+2025-09-05 22:42:04.703 | INFO     | src.api.auth:register_user:43 - register endpoint called
+2025-09-05 22:42:04.723 | INFO     | src.main:log_requests:34 - Response status: 400 for POST http://test/auth/register
+2025-09-05 22:42:04.724 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/login
+2025-09-05 22:42:04.726 | INFO     | src.api.auth:login:57 - Login endpoint called
+2025-09-05 22:42:04.992 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/login
+2025-09-05 22:42:04.993 | INFO     | src.main:log_requests:32 - Incoming request: GET http://test/resumes/me
+2025-09-05 22:42:05.029 | INFO     | src.api.resume:get_user_resumes:22 - get_user_resumes endpoint called
+2025-09-05 22:42:05.049 | INFO     | src.main:log_requests:34 - Response status: 200 for GET http://test/resumes/me
+2025-09-05 22:42:05.051 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/register
+2025-09-05 22:42:05.052 | INFO     | src.api.auth:register_user:43 - register endpoint called
+2025-09-05 22:42:05.074 | INFO     | src.main:log_requests:34 - Response status: 400 for POST http://test/auth/register
+2025-09-05 22:42:05.075 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/login
+2025-09-05 22:42:05.077 | INFO     | src.api.auth:login:57 - Login endpoint called
+2025-09-05 22:42:05.344 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/login
+2025-09-05 22:42:05.344 | INFO     | src.main:log_requests:32 - Incoming request: GET http://test/resumes/1
+2025-09-05 22:42:05.377 | INFO     | src.api.resume:get_resume_by_id:28 - get_resume_by_id endpoint called
+2025-09-05 22:42:05.397 | INFO     | src.main:log_requests:34 - Response status: 200 for GET http://test/resumes/1
+2025-09-05 22:42:05.399 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/register
+2025-09-05 22:42:05.400 | INFO     | src.api.auth:register_user:43 - register endpoint called
+2025-09-05 22:42:05.421 | INFO     | src.main:log_requests:34 - Response status: 400 for POST http://test/auth/register
+2025-09-05 22:42:05.422 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/login
+2025-09-05 22:42:05.423 | INFO     | src.api.auth:login:57 - Login endpoint called
+2025-09-05 22:42:05.679 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/login
+2025-09-05 22:42:05.679 | INFO     | src.main:log_requests:32 - Incoming request: PATCH http://test/resumes/1
+2025-09-05 22:42:05.714 | INFO     | src.api.resume:update_resume:40 - update_resume endpoint called
+2025-09-05 22:42:05.737 | INFO     | src.main:log_requests:34 - Response status: 200 for PATCH http://test/resumes/1
+2025-09-05 22:43:43.825 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/register
+2025-09-05 22:43:43.830 | INFO     | src.api.auth:register_user:43 - register endpoint called
+2025-09-05 22:43:44.135 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/register
+2025-09-05 22:43:44.136 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/login
+2025-09-05 22:43:44.138 | INFO     | src.api.auth:login:57 - Login endpoint called
+2025-09-05 22:43:44.416 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/login
+2025-09-05 22:43:44.417 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/resumes
+2025-09-05 22:43:44.450 | INFO     | src.api.resume:add_resume:15 - add_resume endpoint called
+2025-09-05 22:43:44.472 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/resumes
+2025-09-05 22:43:44.474 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/register
+2025-09-05 22:43:44.475 | INFO     | src.api.auth:register_user:43 - register endpoint called
+2025-09-05 22:43:44.497 | INFO     | src.main:log_requests:34 - Response status: 400 for POST http://test/auth/register
+2025-09-05 22:43:44.497 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/login
+2025-09-05 22:43:44.499 | INFO     | src.api.auth:login:57 - Login endpoint called
+2025-09-05 22:43:44.767 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/login
+2025-09-05 22:43:44.768 | INFO     | src.main:log_requests:32 - Incoming request: GET http://test/resumes/me
+2025-09-05 22:43:44.800 | INFO     | src.api.resume:get_user_resumes:22 - get_user_resumes endpoint called
+2025-09-05 22:43:44.819 | INFO     | src.main:log_requests:34 - Response status: 200 for GET http://test/resumes/me
+2025-09-05 22:43:44.821 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/register
+2025-09-05 22:43:44.821 | INFO     | src.api.auth:register_user:43 - register endpoint called
+2025-09-05 22:43:44.840 | INFO     | src.main:log_requests:34 - Response status: 400 for POST http://test/auth/register
+2025-09-05 22:43:44.841 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/login
+2025-09-05 22:43:44.843 | INFO     | src.api.auth:login:57 - Login endpoint called
+2025-09-05 22:43:45.099 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/login
+2025-09-05 22:43:45.100 | INFO     | src.main:log_requests:32 - Incoming request: GET http://test/resumes/1
+2025-09-05 22:43:45.138 | INFO     | src.api.resume:get_resume_by_id:28 - get_resume_by_id endpoint called
+2025-09-05 22:43:45.162 | INFO     | src.main:log_requests:34 - Response status: 200 for GET http://test/resumes/1
+2025-09-05 22:43:45.165 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/register
+2025-09-05 22:43:45.166 | INFO     | src.api.auth:register_user:43 - register endpoint called
+2025-09-05 22:43:45.191 | INFO     | src.main:log_requests:34 - Response status: 400 for POST http://test/auth/register
+2025-09-05 22:43:45.192 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/login
+2025-09-05 22:43:45.194 | INFO     | src.api.auth:login:57 - Login endpoint called
+2025-09-05 22:43:45.455 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/login
+2025-09-05 22:43:45.456 | INFO     | src.main:log_requests:32 - Incoming request: PATCH http://test/resumes/1
+2025-09-05 22:43:45.494 | INFO     | src.api.resume:update_resume:40 - update_resume endpoint called
+2025-09-05 22:43:45.516 | INFO     | src.main:log_requests:34 - Response status: 200 for PATCH http://test/resumes/1
+2025-09-05 22:43:58.677 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/register
+2025-09-05 22:43:58.683 | INFO     | src.api.auth:register_user:43 - register endpoint called
+2025-09-05 22:43:58.974 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/register
+2025-09-05 22:43:58.974 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/login
+2025-09-05 22:43:58.976 | INFO     | src.api.auth:login:57 - Login endpoint called
+2025-09-05 22:43:59.259 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/login
+2025-09-05 22:43:59.260 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/resumes
+2025-09-05 22:43:59.295 | INFO     | src.api.resume:add_resume:15 - add_resume endpoint called
+2025-09-05 22:43:59.317 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/resumes
+2025-09-05 22:43:59.319 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/register
+2025-09-05 22:43:59.320 | INFO     | src.api.auth:register_user:43 - register endpoint called
+2025-09-05 22:43:59.344 | INFO     | src.main:log_requests:34 - Response status: 400 for POST http://test/auth/register
+2025-09-05 22:43:59.345 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/login
+2025-09-05 22:43:59.347 | INFO     | src.api.auth:login:57 - Login endpoint called
+2025-09-05 22:43:59.617 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/login
+2025-09-05 22:43:59.617 | INFO     | src.main:log_requests:32 - Incoming request: GET http://test/resumes/me
+2025-09-05 22:43:59.654 | INFO     | src.api.resume:get_user_resumes:22 - get_user_resumes endpoint called
+2025-09-05 22:43:59.673 | INFO     | src.main:log_requests:34 - Response status: 200 for GET http://test/resumes/me
+2025-09-05 22:43:59.676 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/register
+2025-09-05 22:43:59.676 | INFO     | src.api.auth:register_user:43 - register endpoint called
+2025-09-05 22:43:59.697 | INFO     | src.main:log_requests:34 - Response status: 400 for POST http://test/auth/register
+2025-09-05 22:43:59.698 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/login
+2025-09-05 22:43:59.700 | INFO     | src.api.auth:login:57 - Login endpoint called
+2025-09-05 22:43:59.968 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/login
+2025-09-05 22:43:59.968 | INFO     | src.main:log_requests:32 - Incoming request: GET http://test/resumes/1
+2025-09-05 22:44:00.000 | INFO     | src.api.resume:get_resume_by_id:28 - get_resume_by_id endpoint called
+2025-09-05 22:44:00.021 | INFO     | src.main:log_requests:34 - Response status: 200 for GET http://test/resumes/1
+2025-09-05 22:44:00.023 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/register
+2025-09-05 22:44:00.024 | INFO     | src.api.auth:register_user:43 - register endpoint called
+2025-09-05 22:44:00.048 | INFO     | src.main:log_requests:34 - Response status: 400 for POST http://test/auth/register
+2025-09-05 22:44:00.048 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/login
+2025-09-05 22:44:00.050 | INFO     | src.api.auth:login:57 - Login endpoint called
+2025-09-05 22:44:00.319 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/login
+2025-09-05 22:44:00.319 | INFO     | src.main:log_requests:32 - Incoming request: PATCH http://test/resumes/1
+2025-09-05 22:44:00.356 | INFO     | src.api.resume:update_resume:40 - update_resume endpoint called
+2025-09-05 22:44:00.381 | INFO     | src.main:log_requests:34 - Response status: 200 for PATCH http://test/resumes/1
+2025-09-05 22:46:33.013 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/register
+2025-09-05 22:46:33.019 | INFO     | src.api.auth:register_user:43 - register endpoint called
+2025-09-05 22:46:33.312 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/register
+2025-09-05 22:46:33.313 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/login
+2025-09-05 22:46:33.315 | INFO     | src.api.auth:login:57 - Login endpoint called
+2025-09-05 22:46:33.596 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/login
+2025-09-05 22:46:33.596 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/resumes
+2025-09-05 22:46:33.644 | INFO     | src.api.resume:add_resume:15 - add_resume endpoint called
+2025-09-05 22:46:33.692 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/resumes
+2025-09-05 22:46:33.695 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/register
+2025-09-05 22:46:33.696 | INFO     | src.api.auth:register_user:43 - register endpoint called
+2025-09-05 22:46:33.722 | INFO     | src.main:log_requests:34 - Response status: 400 for POST http://test/auth/register
+2025-09-05 22:46:33.723 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/login
+2025-09-05 22:46:33.724 | INFO     | src.api.auth:login:57 - Login endpoint called
+2025-09-05 22:46:33.995 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/login
+2025-09-05 22:46:33.995 | INFO     | src.main:log_requests:32 - Incoming request: GET http://test/resumes/me
+2025-09-05 22:46:34.026 | INFO     | src.api.resume:get_user_resumes:22 - get_user_resumes endpoint called
+2025-09-05 22:46:34.046 | INFO     | src.main:log_requests:34 - Response status: 200 for GET http://test/resumes/me
+2025-09-05 22:46:34.048 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/register
+2025-09-05 22:46:34.049 | INFO     | src.api.auth:register_user:43 - register endpoint called
+2025-09-05 22:46:34.069 | INFO     | src.main:log_requests:34 - Response status: 400 for POST http://test/auth/register
+2025-09-05 22:46:34.070 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/login
+2025-09-05 22:46:34.072 | INFO     | src.api.auth:login:57 - Login endpoint called
+2025-09-05 22:46:34.336 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/login
+2025-09-05 22:46:34.336 | INFO     | src.main:log_requests:32 - Incoming request: GET http://test/resumes/1
+2025-09-05 22:46:34.373 | INFO     | src.api.resume:get_resume_by_id:28 - get_resume_by_id endpoint called
+2025-09-05 22:46:34.394 | INFO     | src.main:log_requests:34 - Response status: 200 for GET http://test/resumes/1
+2025-09-05 22:46:34.396 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/register
+2025-09-05 22:46:34.396 | INFO     | src.api.auth:register_user:43 - register endpoint called
+2025-09-05 22:46:34.419 | INFO     | src.main:log_requests:34 - Response status: 400 for POST http://test/auth/register
+2025-09-05 22:46:34.420 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/login
+2025-09-05 22:46:34.421 | INFO     | src.api.auth:login:57 - Login endpoint called
+2025-09-05 22:46:34.680 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/login
+2025-09-05 22:46:34.681 | INFO     | src.main:log_requests:32 - Incoming request: PATCH http://test/resumes/1
+2025-09-05 22:46:34.717 | INFO     | src.api.resume:update_resume:40 - update_resume endpoint called
+2025-09-05 22:47:21.710 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/register
+2025-09-05 22:47:21.717 | INFO     | src.api.auth:register_user:43 - register endpoint called
+2025-09-05 22:47:22.016 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/register
+2025-09-05 22:47:22.017 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/login
+2025-09-05 22:47:22.018 | INFO     | src.api.auth:login:57 - Login endpoint called
+2025-09-05 22:47:22.301 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/login
+2025-09-05 22:47:22.302 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/resumes
+2025-09-05 22:47:22.341 | INFO     | src.api.resume:add_resume:15 - add_resume endpoint called
+2025-09-05 22:47:22.367 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/resumes
+2025-09-05 22:47:22.370 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/register
+2025-09-05 22:47:22.371 | INFO     | src.api.auth:register_user:43 - register endpoint called
+2025-09-05 22:47:22.394 | INFO     | src.main:log_requests:34 - Response status: 400 for POST http://test/auth/register
+2025-09-05 22:47:22.395 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/login
+2025-09-05 22:47:22.397 | INFO     | src.api.auth:login:57 - Login endpoint called
+2025-09-05 22:47:22.672 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/login
+2025-09-05 22:47:22.672 | INFO     | src.main:log_requests:32 - Incoming request: GET http://test/resumes/me
+2025-09-05 22:47:22.706 | INFO     | src.api.resume:get_user_resumes:22 - get_user_resumes endpoint called
+2025-09-05 22:47:22.727 | INFO     | src.main:log_requests:34 - Response status: 200 for GET http://test/resumes/me
+2025-09-05 22:47:22.729 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/register
+2025-09-05 22:47:22.730 | INFO     | src.api.auth:register_user:43 - register endpoint called
+2025-09-05 22:47:22.753 | INFO     | src.main:log_requests:34 - Response status: 400 for POST http://test/auth/register
+2025-09-05 22:47:22.754 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/login
+2025-09-05 22:47:22.756 | INFO     | src.api.auth:login:57 - Login endpoint called
+2025-09-05 22:47:23.027 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/login
+2025-09-05 22:47:23.028 | INFO     | src.main:log_requests:32 - Incoming request: GET http://test/resumes/1
+2025-09-05 22:47:23.060 | INFO     | src.api.resume:get_resume_by_id:28 - get_resume_by_id endpoint called
+2025-09-05 22:47:23.081 | INFO     | src.main:log_requests:34 - Response status: 200 for GET http://test/resumes/1
+2025-09-05 22:47:23.083 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/register
+2025-09-05 22:47:23.084 | INFO     | src.api.auth:register_user:43 - register endpoint called
+2025-09-05 22:47:23.105 | INFO     | src.main:log_requests:34 - Response status: 400 for POST http://test/auth/register
+2025-09-05 22:47:23.106 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/login
+2025-09-05 22:47:23.108 | INFO     | src.api.auth:login:57 - Login endpoint called
+2025-09-05 22:47:23.376 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/login
+2025-09-05 22:47:23.377 | INFO     | src.main:log_requests:32 - Incoming request: PATCH http://test/resumes/1
+2025-09-05 22:47:23.413 | INFO     | src.api.resume:update_resume:40 - update_resume endpoint called
+2025-09-05 22:47:23.436 | INFO     | src.main:log_requests:34 - Response status: 200 for PATCH http://test/resumes/1
+2025-09-05 22:47:57.938 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/register
+2025-09-05 22:47:57.946 | INFO     | src.api.auth:register_user:43 - register endpoint called
+2025-09-05 22:47:58.267 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/register
+2025-09-05 22:47:58.268 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/login
+2025-09-05 22:47:58.269 | INFO     | src.api.auth:login:57 - Login endpoint called
+2025-09-05 22:47:58.569 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/login
+2025-09-05 22:47:58.570 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/resumes
+2025-09-05 22:47:58.610 | INFO     | src.api.resume:add_resume:15 - add_resume endpoint called
+2025-09-05 22:47:58.634 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/resumes
+2025-09-05 22:47:58.636 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/register
+2025-09-05 22:47:58.637 | INFO     | src.api.auth:register_user:43 - register endpoint called
+2025-09-05 22:47:58.661 | INFO     | src.main:log_requests:34 - Response status: 400 for POST http://test/auth/register
+2025-09-05 22:47:58.662 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/login
+2025-09-05 22:47:58.665 | INFO     | src.api.auth:login:57 - Login endpoint called
+2025-09-05 22:47:58.941 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/login
+2025-09-05 22:47:58.942 | INFO     | src.main:log_requests:32 - Incoming request: GET http://test/resumes/me
+2025-09-05 22:47:58.976 | INFO     | src.api.resume:get_user_resumes:22 - get_user_resumes endpoint called
+2025-09-05 22:47:58.997 | INFO     | src.main:log_requests:34 - Response status: 200 for GET http://test/resumes/me
+2025-09-05 22:47:59.000 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/register
+2025-09-05 22:47:59.000 | INFO     | src.api.auth:register_user:43 - register endpoint called
+2025-09-05 22:47:59.020 | INFO     | src.main:log_requests:34 - Response status: 400 for POST http://test/auth/register
+2025-09-05 22:47:59.021 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/login
+2025-09-05 22:47:59.023 | INFO     | src.api.auth:login:57 - Login endpoint called
+2025-09-05 22:47:59.290 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/login
+2025-09-05 22:47:59.291 | INFO     | src.main:log_requests:32 - Incoming request: GET http://test/resumes/1
+2025-09-05 22:47:59.331 | INFO     | src.api.resume:get_resume_by_id:28 - get_resume_by_id endpoint called
+2025-09-05 22:47:59.352 | INFO     | src.main:log_requests:34 - Response status: 200 for GET http://test/resumes/1
+2025-09-05 22:47:59.354 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/register
+2025-09-05 22:47:59.355 | INFO     | src.api.auth:register_user:43 - register endpoint called
+2025-09-05 22:47:59.375 | INFO     | src.main:log_requests:34 - Response status: 400 for POST http://test/auth/register
+2025-09-05 22:47:59.376 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/login
+2025-09-05 22:47:59.378 | INFO     | src.api.auth:login:57 - Login endpoint called
+2025-09-05 22:47:59.649 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/login
+2025-09-05 22:47:59.649 | INFO     | src.main:log_requests:32 - Incoming request: PATCH http://test/resumes/1
+2025-09-05 22:47:59.682 | INFO     | src.api.resume:update_resume:40 - update_resume endpoint called
+2025-09-05 22:47:59.703 | INFO     | src.main:log_requests:34 - Response status: 200 for PATCH http://test/resumes/1
+2025-09-05 22:48:29.628 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/register
+2025-09-05 22:48:29.635 | INFO     | src.api.auth:register_user:43 - register endpoint called
+2025-09-05 22:48:29.931 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/register
+2025-09-05 22:48:29.931 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/login
+2025-09-05 22:48:29.933 | INFO     | src.api.auth:login:57 - Login endpoint called
+2025-09-05 22:48:30.228 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/login
+2025-09-05 22:48:30.229 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/resumes
+2025-09-05 22:48:30.267 | INFO     | src.api.resume:add_resume:15 - add_resume endpoint called
+2025-09-05 22:48:30.290 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/resumes
+2025-09-05 22:48:30.293 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/register
+2025-09-05 22:48:30.294 | INFO     | src.api.auth:register_user:43 - register endpoint called
+2025-09-05 22:48:30.316 | INFO     | src.main:log_requests:34 - Response status: 400 for POST http://test/auth/register
+2025-09-05 22:48:30.317 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/login
+2025-09-05 22:48:30.319 | INFO     | src.api.auth:login:57 - Login endpoint called
+2025-09-05 22:48:30.591 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/login
+2025-09-05 22:48:30.591 | INFO     | src.main:log_requests:32 - Incoming request: GET http://test/resumes/me
+2025-09-05 22:48:30.627 | INFO     | src.api.resume:get_user_resumes:22 - get_user_resumes endpoint called
+2025-09-05 22:48:30.652 | INFO     | src.main:log_requests:34 - Response status: 200 for GET http://test/resumes/me
+2025-09-05 22:48:30.654 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/register
+2025-09-05 22:48:30.655 | INFO     | src.api.auth:register_user:43 - register endpoint called
+2025-09-05 22:48:30.678 | INFO     | src.main:log_requests:34 - Response status: 400 for POST http://test/auth/register
+2025-09-05 22:48:30.679 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/login
+2025-09-05 22:48:30.681 | INFO     | src.api.auth:login:57 - Login endpoint called
+2025-09-05 22:48:30.950 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/login
+2025-09-05 22:48:30.950 | INFO     | src.main:log_requests:32 - Incoming request: GET http://test/resumes/1
+2025-09-05 22:48:30.985 | INFO     | src.api.resume:get_resume_by_id:28 - get_resume_by_id endpoint called
+2025-09-05 22:48:31.004 | INFO     | src.main:log_requests:34 - Response status: 200 for GET http://test/resumes/1
+2025-09-05 22:48:31.006 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/register
+2025-09-05 22:48:31.007 | INFO     | src.api.auth:register_user:43 - register endpoint called
+2025-09-05 22:48:31.027 | INFO     | src.main:log_requests:34 - Response status: 400 for POST http://test/auth/register
+2025-09-05 22:48:31.028 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/login
+2025-09-05 22:48:31.030 | INFO     | src.api.auth:login:57 - Login endpoint called
+2025-09-05 22:48:31.290 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/login
+2025-09-05 22:48:31.291 | INFO     | src.main:log_requests:32 - Incoming request: PATCH http://test/resumes/1
+2025-09-05 22:48:31.323 | INFO     | src.api.resume:update_resume:40 - update_resume endpoint called
+2025-09-05 22:48:31.344 | INFO     | src.main:log_requests:34 - Response status: 200 for PATCH http://test/resumes/1
+2025-09-05 22:49:06.104 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/register
+2025-09-05 22:49:06.110 | INFO     | src.api.auth:register_user:43 - register endpoint called
+2025-09-05 22:49:06.424 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/register
+2025-09-05 22:49:06.425 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/login
+2025-09-05 22:49:06.428 | INFO     | src.api.auth:login:57 - Login endpoint called
+2025-09-05 22:49:06.713 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/login
+2025-09-05 22:49:06.714 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/resumes
+2025-09-05 22:49:06.746 | INFO     | src.api.resume:add_resume:15 - add_resume endpoint called
+2025-09-05 22:49:06.767 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/resumes
+2025-09-05 22:49:06.770 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/register
+2025-09-05 22:49:06.771 | INFO     | src.api.auth:register_user:43 - register endpoint called
+2025-09-05 22:49:06.791 | INFO     | src.main:log_requests:34 - Response status: 400 for POST http://test/auth/register
+2025-09-05 22:49:06.792 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/login
+2025-09-05 22:49:06.794 | INFO     | src.api.auth:login:57 - Login endpoint called
+2025-09-05 22:49:07.059 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/login
+2025-09-05 22:49:07.060 | INFO     | src.main:log_requests:32 - Incoming request: GET http://test/resumes/me
+2025-09-05 22:49:07.092 | INFO     | src.api.resume:get_user_resumes:22 - get_user_resumes endpoint called
+2025-09-05 22:49:07.115 | INFO     | src.main:log_requests:34 - Response status: 200 for GET http://test/resumes/me
+2025-09-05 22:49:07.118 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/register
+2025-09-05 22:49:07.119 | INFO     | src.api.auth:register_user:43 - register endpoint called
+2025-09-05 22:49:07.140 | INFO     | src.main:log_requests:34 - Response status: 400 for POST http://test/auth/register
+2025-09-05 22:49:07.141 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/login
+2025-09-05 22:49:07.143 | INFO     | src.api.auth:login:57 - Login endpoint called
+2025-09-05 22:49:07.400 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/login
+2025-09-05 22:49:07.401 | INFO     | src.main:log_requests:32 - Incoming request: GET http://test/resumes/1
+2025-09-05 22:49:07.441 | INFO     | src.api.resume:get_resume_by_id:28 - get_resume_by_id endpoint called
+2025-09-05 22:49:07.462 | INFO     | src.main:log_requests:34 - Response status: 200 for GET http://test/resumes/1
+2025-09-05 22:49:07.464 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/register
+2025-09-05 22:49:07.465 | INFO     | src.api.auth:register_user:43 - register endpoint called
+2025-09-05 22:49:07.485 | INFO     | src.main:log_requests:34 - Response status: 400 for POST http://test/auth/register
+2025-09-05 22:49:07.486 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/login
+2025-09-05 22:49:07.487 | INFO     | src.api.auth:login:57 - Login endpoint called
+2025-09-05 22:49:07.748 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/login
+2025-09-05 22:49:07.748 | INFO     | src.main:log_requests:32 - Incoming request: PATCH http://test/resumes/1
+2025-09-05 22:49:07.787 | INFO     | src.api.resume:update_resume:40 - update_resume endpoint called
+2025-09-05 22:49:07.813 | INFO     | src.main:log_requests:34 - Response status: 200 for PATCH http://test/resumes/1
+2025-09-05 22:50:41.375 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/register
+2025-09-05 22:50:41.382 | INFO     | src.api.auth:register_user:43 - register endpoint called
+2025-09-05 22:50:41.700 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/register
+2025-09-05 22:50:41.701 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/login
+2025-09-05 22:50:41.703 | INFO     | src.api.auth:login:57 - Login endpoint called
+2025-09-05 22:50:41.994 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/login
+2025-09-05 22:50:41.994 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/resumes
+2025-09-05 22:50:42.033 | INFO     | src.api.resume:add_resume:15 - add_resume endpoint called
+2025-09-05 22:50:42.055 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/resumes
+2025-09-05 22:50:42.057 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/register
+2025-09-05 22:50:42.058 | INFO     | src.api.auth:register_user:43 - register endpoint called
+2025-09-05 22:50:42.080 | INFO     | src.main:log_requests:34 - Response status: 400 for POST http://test/auth/register
+2025-09-05 22:50:42.081 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/login
+2025-09-05 22:50:42.083 | INFO     | src.api.auth:login:57 - Login endpoint called
+2025-09-05 22:50:42.357 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/login
+2025-09-05 22:50:42.357 | INFO     | src.main:log_requests:32 - Incoming request: GET http://test/resumes/me
+2025-09-05 22:50:42.391 | INFO     | src.api.resume:get_user_resumes:22 - get_user_resumes endpoint called
+2025-09-05 22:50:42.412 | INFO     | src.main:log_requests:34 - Response status: 200 for GET http://test/resumes/me
+2025-09-05 22:50:42.415 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/register
+2025-09-05 22:50:42.416 | INFO     | src.api.auth:register_user:43 - register endpoint called
+2025-09-05 22:50:42.439 | INFO     | src.main:log_requests:34 - Response status: 400 for POST http://test/auth/register
+2025-09-05 22:50:42.440 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/login
+2025-09-05 22:50:42.443 | INFO     | src.api.auth:login:57 - Login endpoint called
+2025-09-05 22:50:42.714 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/login
+2025-09-05 22:50:42.715 | INFO     | src.main:log_requests:32 - Incoming request: GET http://test/resumes/1
+2025-09-05 22:50:42.745 | INFO     | src.api.resume:get_resume_by_id:28 - get_resume_by_id endpoint called
+2025-09-05 22:50:42.769 | INFO     | src.main:log_requests:34 - Response status: 200 for GET http://test/resumes/1
+2025-09-05 22:50:42.771 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/register
+2025-09-05 22:50:42.772 | INFO     | src.api.auth:register_user:43 - register endpoint called
+2025-09-05 22:50:42.793 | INFO     | src.main:log_requests:34 - Response status: 400 for POST http://test/auth/register
+2025-09-05 22:50:42.793 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/login
+2025-09-05 22:50:42.795 | INFO     | src.api.auth:login:57 - Login endpoint called
+2025-09-05 22:50:43.063 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/login
+2025-09-05 22:50:43.063 | INFO     | src.main:log_requests:32 - Incoming request: PATCH http://test/resumes/1
+2025-09-05 22:50:43.099 | INFO     | src.api.resume:update_resume:40 - update_resume endpoint called
+2025-09-05 22:50:43.122 | INFO     | src.main:log_requests:34 - Response status: 200 for PATCH http://test/resumes/1
+2025-09-05 22:50:43.124 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/register
+2025-09-05 22:50:43.125 | INFO     | src.api.auth:register_user:43 - register endpoint called
+2025-09-05 22:50:43.146 | INFO     | src.main:log_requests:34 - Response status: 400 for POST http://test/auth/register
+2025-09-05 22:50:43.146 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/login
+2025-09-05 22:50:43.149 | INFO     | src.api.auth:login:57 - Login endpoint called
+2025-09-05 22:50:43.415 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/login
+2025-09-05 22:50:43.416 | INFO     | src.main:log_requests:32 - Incoming request: PATCH http://test/resumes/1/improve
+2025-09-05 22:50:43.449 | INFO     | src.api.resume:improve_resume:52 - improve_resume endpoint called
+2025-09-05 22:50:43.467 | INFO     | src.main:log_requests:34 - Response status: 200 for PATCH http://test/resumes/1/improve
+2025-09-05 22:51:03.009 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/register
+2025-09-05 22:51:03.015 | INFO     | src.api.auth:register_user:43 - register endpoint called
+2025-09-05 22:51:03.308 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/register
+2025-09-05 22:51:03.308 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/login
+2025-09-05 22:51:03.310 | INFO     | src.api.auth:login:57 - Login endpoint called
+2025-09-05 22:51:03.584 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/login
+2025-09-05 22:51:03.585 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/resumes
+2025-09-05 22:51:03.617 | INFO     | src.api.resume:add_resume:15 - add_resume endpoint called
+2025-09-05 22:51:03.641 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/resumes
+2025-09-05 22:51:03.643 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/register
+2025-09-05 22:51:03.644 | INFO     | src.api.auth:register_user:43 - register endpoint called
+2025-09-05 22:51:03.666 | INFO     | src.main:log_requests:34 - Response status: 400 for POST http://test/auth/register
+2025-09-05 22:51:03.667 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/login
+2025-09-05 22:51:03.669 | INFO     | src.api.auth:login:57 - Login endpoint called
+2025-09-05 22:51:03.935 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/login
+2025-09-05 22:51:03.935 | INFO     | src.main:log_requests:32 - Incoming request: GET http://test/resumes/me
+2025-09-05 22:51:03.965 | INFO     | src.api.resume:get_user_resumes:22 - get_user_resumes endpoint called
+2025-09-05 22:51:03.985 | INFO     | src.main:log_requests:34 - Response status: 200 for GET http://test/resumes/me
+2025-09-05 22:51:03.987 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/register
+2025-09-05 22:51:03.988 | INFO     | src.api.auth:register_user:43 - register endpoint called
+2025-09-05 22:51:04.008 | INFO     | src.main:log_requests:34 - Response status: 400 for POST http://test/auth/register
+2025-09-05 22:51:04.009 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/login
+2025-09-05 22:51:04.011 | INFO     | src.api.auth:login:57 - Login endpoint called
+2025-09-05 22:51:04.280 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/login
+2025-09-05 22:51:04.280 | INFO     | src.main:log_requests:32 - Incoming request: GET http://test/resumes/1
+2025-09-05 22:51:04.319 | INFO     | src.api.resume:get_resume_by_id:28 - get_resume_by_id endpoint called
+2025-09-05 22:51:04.342 | INFO     | src.main:log_requests:34 - Response status: 200 for GET http://test/resumes/1
+2025-09-05 22:51:04.344 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/register
+2025-09-05 22:51:04.345 | INFO     | src.api.auth:register_user:43 - register endpoint called
+2025-09-05 22:51:04.367 | INFO     | src.main:log_requests:34 - Response status: 400 for POST http://test/auth/register
+2025-09-05 22:51:04.367 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/login
+2025-09-05 22:51:04.369 | INFO     | src.api.auth:login:57 - Login endpoint called
+2025-09-05 22:51:04.632 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/login
+2025-09-05 22:51:04.633 | INFO     | src.main:log_requests:32 - Incoming request: PATCH http://test/resumes/1
+2025-09-05 22:51:04.669 | INFO     | src.api.resume:update_resume:40 - update_resume endpoint called
+2025-09-05 22:51:04.691 | INFO     | src.main:log_requests:34 - Response status: 200 for PATCH http://test/resumes/1
+2025-09-05 22:51:04.693 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/register
+2025-09-05 22:51:04.694 | INFO     | src.api.auth:register_user:43 - register endpoint called
+2025-09-05 22:51:04.714 | INFO     | src.main:log_requests:34 - Response status: 400 for POST http://test/auth/register
+2025-09-05 22:51:04.715 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/login
+2025-09-05 22:51:04.717 | INFO     | src.api.auth:login:57 - Login endpoint called
+2025-09-05 22:51:04.974 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/login
+2025-09-05 22:51:04.975 | INFO     | src.main:log_requests:32 - Incoming request: PATCH http://test/resumes/1/improve
+2025-09-05 22:51:05.013 | INFO     | src.api.resume:improve_resume:52 - improve_resume endpoint called
+2025-09-05 22:51:05.034 | INFO     | src.main:log_requests:34 - Response status: 200 for PATCH http://test/resumes/1/improve
+2025-09-05 22:52:04.192 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/register
+2025-09-05 22:52:04.198 | INFO     | src.api.auth:register_user:43 - register endpoint called
+2025-09-05 22:52:04.496 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/register
+2025-09-05 22:52:04.497 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/login
+2025-09-05 22:52:04.498 | INFO     | src.api.auth:login:57 - Login endpoint called
+2025-09-05 22:52:04.778 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/login
+2025-09-05 22:52:04.779 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/resumes
+2025-09-05 22:52:04.815 | INFO     | src.api.resume:add_resume:15 - add_resume endpoint called
+2025-09-05 22:52:04.840 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/resumes
+2025-09-05 22:52:04.843 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/register
+2025-09-05 22:52:04.844 | INFO     | src.api.auth:register_user:43 - register endpoint called
+2025-09-05 22:52:04.864 | INFO     | src.main:log_requests:34 - Response status: 400 for POST http://test/auth/register
+2025-09-05 22:52:04.865 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/login
+2025-09-05 22:52:04.867 | INFO     | src.api.auth:login:57 - Login endpoint called
+2025-09-05 22:52:05.139 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/login
+2025-09-05 22:52:05.140 | INFO     | src.main:log_requests:32 - Incoming request: GET http://test/resumes/me
+2025-09-05 22:52:05.173 | INFO     | src.api.resume:get_user_resumes:22 - get_user_resumes endpoint called
+2025-09-05 22:52:05.195 | INFO     | src.main:log_requests:34 - Response status: 200 for GET http://test/resumes/me
+2025-09-05 22:52:05.197 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/register
+2025-09-05 22:52:05.198 | INFO     | src.api.auth:register_user:43 - register endpoint called
+2025-09-05 22:52:05.219 | INFO     | src.main:log_requests:34 - Response status: 400 for POST http://test/auth/register
+2025-09-05 22:52:05.220 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/login
+2025-09-05 22:52:05.223 | INFO     | src.api.auth:login:57 - Login endpoint called
+2025-09-05 22:52:05.492 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/login
+2025-09-05 22:52:05.493 | INFO     | src.main:log_requests:32 - Incoming request: GET http://test/resumes/1
+2025-09-05 22:52:05.528 | INFO     | src.api.resume:get_resume_by_id:28 - get_resume_by_id endpoint called
+2025-09-05 22:52:05.546 | INFO     | src.main:log_requests:34 - Response status: 200 for GET http://test/resumes/1
+2025-09-05 22:52:05.548 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/register
+2025-09-05 22:52:05.549 | INFO     | src.api.auth:register_user:43 - register endpoint called
+2025-09-05 22:52:05.569 | INFO     | src.main:log_requests:34 - Response status: 400 for POST http://test/auth/register
+2025-09-05 22:52:05.570 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/login
+2025-09-05 22:52:05.572 | INFO     | src.api.auth:login:57 - Login endpoint called
+2025-09-05 22:52:05.834 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/login
+2025-09-05 22:52:05.835 | INFO     | src.main:log_requests:32 - Incoming request: PATCH http://test/resumes/1
+2025-09-05 22:52:05.868 | INFO     | src.api.resume:update_resume:40 - update_resume endpoint called
+2025-09-05 22:52:05.889 | INFO     | src.main:log_requests:34 - Response status: 200 for PATCH http://test/resumes/1
+2025-09-05 22:52:05.892 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/register
+2025-09-05 22:52:05.892 | INFO     | src.api.auth:register_user:43 - register endpoint called
+2025-09-05 22:52:05.913 | INFO     | src.main:log_requests:34 - Response status: 400 for POST http://test/auth/register
+2025-09-05 22:52:05.914 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/login
+2025-09-05 22:52:05.915 | INFO     | src.api.auth:login:57 - Login endpoint called
+2025-09-05 22:52:06.175 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/login
+2025-09-05 22:52:06.176 | INFO     | src.main:log_requests:32 - Incoming request: PATCH http://test/resumes/1/improve
+2025-09-05 22:52:06.214 | INFO     | src.api.resume:improve_resume:52 - improve_resume endpoint called
+2025-09-05 22:52:06.234 | INFO     | src.main:log_requests:34 - Response status: 200 for PATCH http://test/resumes/1/improve
+2025-09-05 22:52:47.839 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/register
+2025-09-05 22:52:47.845 | INFO     | src.api.auth:register_user:43 - register endpoint called
+2025-09-05 22:52:48.151 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/register
+2025-09-05 22:52:48.152 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/login
+2025-09-05 22:52:48.154 | INFO     | src.api.auth:login:57 - Login endpoint called
+2025-09-05 22:52:48.432 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/login
+2025-09-05 22:52:48.433 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/resumes
+2025-09-05 22:52:48.477 | INFO     | src.api.resume:add_resume:15 - add_resume endpoint called
+2025-09-05 22:52:48.503 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/resumes
+2025-09-05 22:52:48.505 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/register
+2025-09-05 22:52:48.506 | INFO     | src.api.auth:register_user:43 - register endpoint called
+2025-09-05 22:52:48.528 | INFO     | src.main:log_requests:34 - Response status: 400 for POST http://test/auth/register
+2025-09-05 22:52:48.529 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/login
+2025-09-05 22:52:48.532 | INFO     | src.api.auth:login:57 - Login endpoint called
+2025-09-05 22:52:48.805 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/login
+2025-09-05 22:52:48.805 | INFO     | src.main:log_requests:32 - Incoming request: GET http://test/resumes/me
+2025-09-05 22:52:48.839 | INFO     | src.api.resume:get_user_resumes:22 - get_user_resumes endpoint called
+2025-09-05 22:52:48.859 | INFO     | src.main:log_requests:34 - Response status: 200 for GET http://test/resumes/me
+2025-09-05 22:52:48.861 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/register
+2025-09-05 22:52:48.862 | INFO     | src.api.auth:register_user:43 - register endpoint called
+2025-09-05 22:52:48.883 | INFO     | src.main:log_requests:34 - Response status: 400 for POST http://test/auth/register
+2025-09-05 22:52:48.884 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/login
+2025-09-05 22:52:48.886 | INFO     | src.api.auth:login:57 - Login endpoint called
+2025-09-05 22:52:49.153 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/login
+2025-09-05 22:52:49.154 | INFO     | src.main:log_requests:32 - Incoming request: GET http://test/resumes/1
+2025-09-05 22:52:49.192 | INFO     | src.api.resume:get_resume_by_id:28 - get_resume_by_id endpoint called
+2025-09-05 22:52:49.212 | INFO     | src.main:log_requests:34 - Response status: 200 for GET http://test/resumes/1
+2025-09-05 22:52:49.214 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/register
+2025-09-05 22:52:49.215 | INFO     | src.api.auth:register_user:43 - register endpoint called
+2025-09-05 22:52:49.236 | INFO     | src.main:log_requests:34 - Response status: 400 for POST http://test/auth/register
+2025-09-05 22:52:49.237 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/login
+2025-09-05 22:52:49.238 | INFO     | src.api.auth:login:57 - Login endpoint called
+2025-09-05 22:52:49.503 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/login
+2025-09-05 22:52:49.504 | INFO     | src.main:log_requests:32 - Incoming request: PATCH http://test/resumes/1
+2025-09-05 22:52:49.536 | INFO     | src.api.resume:update_resume:40 - update_resume endpoint called
+2025-09-05 22:52:49.561 | INFO     | src.main:log_requests:34 - Response status: 200 for PATCH http://test/resumes/1
+2025-09-05 22:52:49.563 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/register
+2025-09-05 22:52:49.564 | INFO     | src.api.auth:register_user:43 - register endpoint called
+2025-09-05 22:52:49.588 | INFO     | src.main:log_requests:34 - Response status: 400 for POST http://test/auth/register
+2025-09-05 22:52:49.589 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/login
+2025-09-05 22:52:49.591 | INFO     | src.api.auth:login:57 - Login endpoint called
+2025-09-05 22:52:49.848 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/login
+2025-09-05 22:52:49.849 | INFO     | src.main:log_requests:32 - Incoming request: PATCH http://test/resumes/1/improve
+2025-09-05 22:52:49.886 | INFO     | src.api.resume:improve_resume:52 - improve_resume endpoint called
+2025-09-05 22:52:49.906 | INFO     | src.main:log_requests:34 - Response status: 200 for PATCH http://test/resumes/1/improve
+2025-09-05 22:54:02.309 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/register
+2025-09-05 22:54:02.315 | INFO     | src.api.auth:register_user:43 - register endpoint called
+2025-09-05 22:54:02.625 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/register
+2025-09-05 22:54:02.626 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/login
+2025-09-05 22:54:02.628 | INFO     | src.api.auth:login:57 - Login endpoint called
+2025-09-05 22:54:02.915 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/login
+2025-09-05 22:54:02.916 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/resumes
+2025-09-05 22:54:02.951 | INFO     | src.api.resume:add_resume:15 - add_resume endpoint called
+2025-09-05 22:54:02.971 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/resumes
+2025-09-05 22:54:02.974 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/register
+2025-09-05 22:54:02.974 | INFO     | src.api.auth:register_user:43 - register endpoint called
+2025-09-05 22:54:02.997 | INFO     | src.main:log_requests:34 - Response status: 400 for POST http://test/auth/register
+2025-09-05 22:54:02.998 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/login
+2025-09-05 22:54:03.000 | INFO     | src.api.auth:login:57 - Login endpoint called
+2025-09-05 22:54:03.265 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/login
+2025-09-05 22:54:03.266 | INFO     | src.main:log_requests:32 - Incoming request: GET http://test/resumes/me
+2025-09-05 22:54:03.301 | INFO     | src.api.resume:get_user_resumes:22 - get_user_resumes endpoint called
+2025-09-05 22:54:03.322 | INFO     | src.main:log_requests:34 - Response status: 200 for GET http://test/resumes/me
+2025-09-05 22:54:03.324 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/register
+2025-09-05 22:54:03.325 | INFO     | src.api.auth:register_user:43 - register endpoint called
+2025-09-05 22:54:03.345 | INFO     | src.main:log_requests:34 - Response status: 400 for POST http://test/auth/register
+2025-09-05 22:54:03.346 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/login
+2025-09-05 22:54:03.348 | INFO     | src.api.auth:login:57 - Login endpoint called
+2025-09-05 22:54:03.624 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/login
+2025-09-05 22:54:03.624 | INFO     | src.main:log_requests:32 - Incoming request: GET http://test/resumes/1
+2025-09-05 22:54:03.655 | INFO     | src.api.resume:get_resume_by_id:28 - get_resume_by_id endpoint called
+2025-09-05 22:54:03.674 | INFO     | src.main:log_requests:34 - Response status: 200 for GET http://test/resumes/1
+2025-09-05 22:54:03.676 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/register
+2025-09-05 22:54:03.677 | INFO     | src.api.auth:register_user:43 - register endpoint called
+2025-09-05 22:54:03.699 | INFO     | src.main:log_requests:34 - Response status: 400 for POST http://test/auth/register
+2025-09-05 22:54:03.700 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/login
+2025-09-05 22:54:03.702 | INFO     | src.api.auth:login:57 - Login endpoint called
+2025-09-05 22:54:03.970 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/login
+2025-09-05 22:54:03.970 | INFO     | src.main:log_requests:32 - Incoming request: PATCH http://test/resumes/1
+2025-09-05 22:54:04.003 | INFO     | src.api.resume:update_resume:40 - update_resume endpoint called
+2025-09-05 22:54:04.025 | INFO     | src.main:log_requests:34 - Response status: 200 for PATCH http://test/resumes/1
+2025-09-05 22:54:04.027 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/register
+2025-09-05 22:54:04.028 | INFO     | src.api.auth:register_user:43 - register endpoint called
+2025-09-05 22:54:04.052 | INFO     | src.main:log_requests:34 - Response status: 400 for POST http://test/auth/register
+2025-09-05 22:54:04.053 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/login
+2025-09-05 22:54:04.055 | INFO     | src.api.auth:login:57 - Login endpoint called
+2025-09-05 22:54:04.321 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/login
+2025-09-05 22:54:04.322 | INFO     | src.main:log_requests:32 - Incoming request: PATCH http://test/resumes/1/improve
+2025-09-05 22:54:04.357 | INFO     | src.api.resume:improve_resume:52 - improve_resume endpoint called
+2025-09-05 22:54:04.375 | INFO     | src.main:log_requests:34 - Response status: 200 for PATCH http://test/resumes/1/improve
+2025-09-05 22:54:04.377 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/register
+2025-09-05 22:54:04.378 | INFO     | src.api.auth:register_user:43 - register endpoint called
+2025-09-05 22:54:04.399 | INFO     | src.main:log_requests:34 - Response status: 400 for POST http://test/auth/register
+2025-09-05 22:54:04.400 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/login
+2025-09-05 22:54:04.401 | INFO     | src.api.auth:login:57 - Login endpoint called
+2025-09-05 22:54:04.663 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/login
+2025-09-05 22:54:04.664 | INFO     | src.main:log_requests:32 - Incoming request: DELETE http://test/resumes/1
+2025-09-05 22:54:04.664 | INFO     | src.main:log_requests:34 - Response status: 405 for DELETE http://test/resumes/1
+2025-09-05 22:55:00.596 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/register
+2025-09-05 22:55:00.602 | INFO     | src.api.auth:register_user:43 - register endpoint called
+2025-09-05 22:55:00.901 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/register
+2025-09-05 22:55:00.902 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/login
+2025-09-05 22:55:00.904 | INFO     | src.api.auth:login:57 - Login endpoint called
+2025-09-05 22:55:01.187 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/login
+2025-09-05 22:55:01.188 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/resumes
+2025-09-05 22:55:01.223 | INFO     | src.api.resume:add_resume:15 - add_resume endpoint called
+2025-09-05 22:55:01.248 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/resumes
+2025-09-05 22:55:01.250 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/register
+2025-09-05 22:55:01.251 | INFO     | src.api.auth:register_user:43 - register endpoint called
+2025-09-05 22:55:01.271 | INFO     | src.main:log_requests:34 - Response status: 400 for POST http://test/auth/register
+2025-09-05 22:55:01.272 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/login
+2025-09-05 22:55:01.274 | INFO     | src.api.auth:login:57 - Login endpoint called
+2025-09-05 22:55:01.542 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/login
+2025-09-05 22:55:01.543 | INFO     | src.main:log_requests:32 - Incoming request: GET http://test/resumes/me
+2025-09-05 22:55:01.577 | INFO     | src.api.resume:get_user_resumes:22 - get_user_resumes endpoint called
+2025-09-05 22:55:01.599 | INFO     | src.main:log_requests:34 - Response status: 200 for GET http://test/resumes/me
+2025-09-05 22:55:01.602 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/register
+2025-09-05 22:55:01.602 | INFO     | src.api.auth:register_user:43 - register endpoint called
+2025-09-05 22:55:01.622 | INFO     | src.main:log_requests:34 - Response status: 400 for POST http://test/auth/register
+2025-09-05 22:55:01.623 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/login
+2025-09-05 22:55:01.625 | INFO     | src.api.auth:login:57 - Login endpoint called
+2025-09-05 22:55:01.893 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/login
+2025-09-05 22:55:01.894 | INFO     | src.main:log_requests:32 - Incoming request: GET http://test/resumes/1
+2025-09-05 22:55:01.933 | INFO     | src.api.resume:get_resume_by_id:28 - get_resume_by_id endpoint called
+2025-09-05 22:55:01.954 | INFO     | src.main:log_requests:34 - Response status: 200 for GET http://test/resumes/1
+2025-09-05 22:55:01.956 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/register
+2025-09-05 22:55:01.957 | INFO     | src.api.auth:register_user:43 - register endpoint called
+2025-09-05 22:55:01.981 | INFO     | src.main:log_requests:34 - Response status: 400 for POST http://test/auth/register
+2025-09-05 22:55:01.982 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/login
+2025-09-05 22:55:01.985 | INFO     | src.api.auth:login:57 - Login endpoint called
+2025-09-05 22:55:02.258 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/login
+2025-09-05 22:55:02.258 | INFO     | src.main:log_requests:32 - Incoming request: PATCH http://test/resumes/1
+2025-09-05 22:55:02.291 | INFO     | src.api.resume:update_resume:40 - update_resume endpoint called
+2025-09-05 22:55:02.310 | INFO     | src.main:log_requests:34 - Response status: 200 for PATCH http://test/resumes/1
+2025-09-05 22:55:02.312 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/register
+2025-09-05 22:55:02.313 | INFO     | src.api.auth:register_user:43 - register endpoint called
+2025-09-05 22:55:02.331 | INFO     | src.main:log_requests:34 - Response status: 400 for POST http://test/auth/register
+2025-09-05 22:55:02.331 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/login
+2025-09-05 22:55:02.334 | INFO     | src.api.auth:login:57 - Login endpoint called
+2025-09-05 22:55:02.596 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/login
+2025-09-05 22:55:02.597 | INFO     | src.main:log_requests:32 - Incoming request: PATCH http://test/resumes/1/improve
+2025-09-05 22:55:02.633 | INFO     | src.api.resume:improve_resume:52 - improve_resume endpoint called
+2025-09-05 22:55:02.654 | INFO     | src.main:log_requests:34 - Response status: 200 for PATCH http://test/resumes/1/improve
+2025-09-05 22:55:02.656 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/register
+2025-09-05 22:55:02.657 | INFO     | src.api.auth:register_user:43 - register endpoint called
+2025-09-05 22:55:02.675 | INFO     | src.main:log_requests:34 - Response status: 400 for POST http://test/auth/register
+2025-09-05 22:55:02.676 | INFO     | src.main:log_requests:32 - Incoming request: POST http://test/auth/login
+2025-09-05 22:55:02.678 | INFO     | src.api.auth:login:57 - Login endpoint called
+2025-09-05 22:55:02.940 | INFO     | src.main:log_requests:34 - Response status: 200 for POST http://test/auth/login
+2025-09-05 22:55:02.940 | INFO     | src.main:log_requests:32 - Incoming request: DELETE http://test/resumes/1
+2025-09-05 22:55:02.972 | INFO     | src.api.resume:delete_resume:63 - delete_resume endpoint called
+2025-09-05 22:55:02.994 | INFO     | src.main:log_requests:34 - Response status: 200 for DELETE http://test/resumes/1

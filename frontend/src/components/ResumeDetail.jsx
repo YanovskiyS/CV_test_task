@@ -12,7 +12,7 @@ export default function ResumeDetail({ user }) {
   useEffect(() => {
     const fetchResume = async () => {
       try {
-        const res = await axios.get(`http://127.0.0.1:8000/resumes/${id}`, {
+        const res = await axios.get(`http://127.0.0.1:7777/resumes/${id}`, {
           headers: { Authorization: `Bearer ${user.accessToken}` },
           withCredentials: true,
         });
@@ -31,7 +31,7 @@ export default function ResumeDetail({ user }) {
   const improveResume = async () => {
     try {
       const res = await axios.patch(
-        `http://127.0.0.1:8000/resumes/${id}/improve`,
+        `http://127.0.0.1:7777/resumes/${id}/improve`,
         {},
         {
           headers: { Authorization: `Bearer ${user.accessToken}` },

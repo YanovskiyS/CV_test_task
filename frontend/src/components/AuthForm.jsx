@@ -7,12 +7,14 @@ export default function AuthForm({ setUser }) {
   const [password, setPassword] = useState("");
   const [message, setMessage] = useState("");
 
+  const apiUrl = import.meta.env.VITE_API_URL;
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
       if (mode === "login") {
         const res = await axios.post(
-          "http://127.0.0.1:8000/auth/login",
+          "http://127.0.0.1:7777/auth/login",
           new URLSearchParams({ username: email, password }),
           { withCredentials: true }
         );
@@ -23,7 +25,7 @@ export default function AuthForm({ setUser }) {
         });
         setMessage("");
       } else {
-        await axios.post("http://127.0.0.1:8000/auth/register", {
+        await axios.post("http://127.0.0.1:7777/auth/register", {
           email,
           password,
         });

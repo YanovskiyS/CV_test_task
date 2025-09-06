@@ -7,5 +7,5 @@ logger.add(
     level="INFO",
     backtrace=True,
     diagnose=True,
-    enqueue=True
+    enqueue=True,
 )

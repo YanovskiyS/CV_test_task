@@ -1,0 +1,41 @@
+services:
+  cv_test_task_service:
+    container_name: "cv_test_task_image"
+    build:
+      context: .
+    ports:
+      - '7777:8000'
+    networks:
+      - CvTestTaskNetwork
+    env_file:
+      - .env
+
+  cv_test_task_db_service:
+    image: postgres:16
+    container_name: "cv_test_task_db"
+    env_file:
+      - .env
+    ports:
+      - "6432:5432"
+    volumes:
+      - pg-testdata-data:/var/lib/postgresql/data
+    networks:
+      - CvTestTaskNetwork
+
+  cv_test_task_frontend:
+    container_name: "cv_test_task_frontend"
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+    ports:
+      - "3000:80"
+    networks:
+      - CvTestTaskNetwork
+
+
+volumes:
+  pg-testdata-data:
+
+networks:
+  CvTestTaskNetwork:
+    external: True

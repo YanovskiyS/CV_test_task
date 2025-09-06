@@ -15,7 +15,11 @@ from src.api.auth import router as auth_router
 
 app = FastAPI()
 
-origins = ["http://localhost:5173"]
+origins = [
+    "http://localhost:3000",  # фронт
+    "http://127.0.0.1:3000",  # иногда полезно
+
+]
 
 app.add_middleware(
     CORSMiddleware,
@@ -27,12 +31,16 @@ app.add_middleware(
 app.include_router(resume_router)
 app.include_router(auth_router)
 
+
 @app.middleware("http")
 async def log_requests(request: Request, call_next):
     logger.info(f"Incoming request: {request.method} {request.url}")
     response = await call_next(request)
-    logger.info(f"Response status: {response.status_code} for {request.method} {request.url}")
+    logger.info(
+        f"Response status: {response.status_code} for {request.method} {request.url}"
+    )
     return response
+
 
 @app.get("/docs", include_in_schema=False)
 async def custom_swagger_ui_html():
